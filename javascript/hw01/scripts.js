@@ -1,4 +1,4 @@
-// fortune
+
 var children = 4;
 var partner = "Kyrgyz kyz:)";
 var geolocation = "San-Francisco";
@@ -25,3 +25,4 @@ console.log (fahrenheit + '\u00B0 Fahrenheit is ' + celsius + '\u00B0 Celsius.')
 var fahrenheit = Math.random()*100;
 var celsius = (fahrenheit-32)/9*5;
 console.log ("It is " + fahrenheit.toFixed() + "\u00B0 Fahrenheit today. That's " + celsius.toFixed() + "\u00B0 Cesius.");
+
