@@ -6,5 +6,5 @@ console.log(farenheit)
 
 var farenheit = 65;
 var celsius = (farenheit-32)*5/9;
-var C = celsius.toFixed(1);
-console.log(C)
+var celsius = celsius.toFixed(1);
+console.log(celsius)
