@@ -3,4 +3,10 @@ homework-directory:
   url: 'replace this with your homework URL (repl, codepen or any other)'
 
   name: 'Azamat Gaparov'
-  url: 'https://repl.it/@agaparkg/js'
+  url: 'https://repl.it/@agaparkg/js#the_fortune_teller.js'
+
+  name: 'Azamat Gaparov'
+  url: 'https://repl.it/@agaparkg/js#the_age_calculator.js'
+
+  name: 'Azamat Gaparov'
+  url: 'https://repl.it/@agaparkg/js#the_temperature_converter.js'
