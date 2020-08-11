@@ -23,16 +23,20 @@
     </ul>
 
     <script>
+      // set font family 
       document.body.style.fontFamily = "Arial, sans-serif";  
+      // set personal info  
       document.getElementById('nickname').innerHTML = 'askat';    
       document.getElementById('favorites').innerHTML = 'JS';    
       document.getElementById('hometown').innerHTML = 'gotham';  
 
+      // loop through <li>  and set class 'listitem'
       var arr = document.querySelectorAll('li');
       arr.forEach((li) => {
         li.classList.add('listitem');
       })
-
+      
+      // create <style> and <img> tags, set attributes and append to <body>
       var style = '.listitem {color: red; }';
       var tag = document.createElement('style');
       var img = document.createElement('img');
