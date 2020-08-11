@@ -8,7 +8,39 @@
   </head>
   <body>
     <!-- Your code is here -->
+    <h1>About Me</h1>
 
+    <ul>
+      <li>Nickname:
+        <span id="nickname"></span>
+      </li>
+      <li>Favorites:
+        <span id="favorites"></span>
+      </li>
+      <li>Hometown:
+        <span id="hometown"></span>
+      </li>
+    </ul>
+
+    <script>
+      document.body.style.fontFamily = "Arial, sans-serif";  
+      document.getElementById('nickname').innerHTML = 'askat';    
+      document.getElementById('favorites').innerHTML = 'JS';    
+      document.getElementById('hometown').innerHTML = 'gotham';  
+
+      var arr = document.querySelectorAll('li');
+      arr.forEach((li) => {
+        li.classList.add('listitem');
+      })
+
+      var style = '.listitem {color: red; }';
+      var tag = document.createElement('style');
+      var img = document.createElement('img');
+      img.setAttribute('src', 'https://vignette.wikia.nocookie.net/sailormooncrystal/images/5/56/3px1X81qbu912o6_1280_-_Copy.jpg/revision/latest/top-crop/width/360/height/450?cb=20150530000515');
+      document.body.appendChild(tag);
+      document.body.appendChild(img);
+
+    </script>
     <script src="scripts.js"></script>
   </body>
 </html>
