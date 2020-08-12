@@ -8,6 +8,91 @@
   </head>
   <body>
     <!-- Your code is here -->
+    <h1>My Book List</h1>
+
+    <script>
+
+    var books = [
+      {
+        title: 'Pinocchio',
+        author: 'Carlo Collodi',
+        isRead: true,
+        imgUrl: 'https://i.pinimg.com/originals/0c/1f/69/0c1f699475b959f6f97a0da688fa1252.jpg',
+      },
+       {
+        title: 'The Little Prince',
+        author: 'Antoine de Saint-Exupery',
+        isRead: true,
+        imgUrl: 'https://prodimage.images-bn.com/pimages/9781646068753_p0_v1_s1200x630.jpg',
+      },
+       {
+        title: 'War and Piece',
+        author: 'Leo Tolstoy',
+        isRead: false,
+        imgUrl: 'https://m.media-amazon.com/images/I/51pTlqiPgfL.jpg',
+      },
+       {
+        title: 'The Idiot',
+        author: 'Fyodor Dostoevsky',
+        isRead: false,
+        imgUrl: 'https://images-na.ssl-images-amazon.com/images/I/51d-VK9ydLL._SX307_BO1,204,203,200_.jpg',
+      }
+    ]
+
+
+    //     Function for new <li> with book info
+    function createLiElem(data) {
+      var li = document.createElement('li');
+      var dataInfo = document.createTextNode(data);
+      li.appendChild(dataInfo)
+      return li
+    }
+
+    //     Function for create <div> with book info for each book in array
+     function createElemAndAppendChild(obj) {
+    //        creating DOM elements
+       var div = document.createElement('div');
+       var ul = document.createElement('ul');
+       var img = document.createElement('img');
+       var src = document.createAttribute('src');
+    //        set attributes and values to elements
+       if(obj.isRead === true) {
+         div.classList.add('read')
+       }
+
+       div.classList.add('book');
+       src.value = obj.imgUrl;
+       img.setAttributeNode(src);
+       var title = createLiElem(obj.title);
+       var author = createLiElem(obj.author);
+    //        append elements to the DOM
+       ul.appendChild(title);
+       ul.appendChild(author);
+       div.appendChild(ul);
+       div.appendChild(img);
+       document.body.appendChild(div); 
+    }
+
+    //     For loop to iterate through array
+    for(var i = 0; i < books.length; i++) {
+
+      var book = books[i];
+      createElemAndAppendChild(book);
+
+    }
+
+
+
+    //     add some style to HTML tags
+
+    var style = document.createElement('style');
+    style.innerHTML = 'body {margin: 0; box-sizing: border-box; text-align: center;} .book { display: inline-block;width: 250px; height: 300px; padding: 5px;font-size: 20px; color:red; } ul {display: flex; flex-direction: column;} li{list-style: none;} img {width: 100%; height: 100%;} .read{ color: green;}'
+    document.body.appendChild(style);
+
+
+
+
+    </script>
 
     <script src="scripts.js"></script>
   </body>
