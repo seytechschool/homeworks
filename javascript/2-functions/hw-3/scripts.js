@@ -24,4 +24,4 @@ function pluralize(a,b){
 pluralize(2,'goose') >> 2 geese
 pluralize(4,'mouse') >> 4 mice
 pluralize(1,'goat') >> 1 goat
-pluralize(5,'cow') >> 5 horses
+pluralize(5,'cow') >> 5 cows
