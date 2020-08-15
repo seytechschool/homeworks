@@ -4,7 +4,9 @@ function biggerNum(num1, num2) {
     return "not a number";
   } else if (num1 === num2) {
     return "numbers are equal";
-  } else if (num2 > num1) {
+  } else if (num1 > num2) {
+    return num1;
+  } else if (num1 < num2) {
     return num2;
   } else {
     return "Error";
