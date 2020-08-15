@@ -1,14 +1,10 @@
 // Your JS code is here
-function Num(idOne,idTwo) {
-  if (idOne > idTwo) {
-    return (
-      idOne
-    )
-  } else {
-    return (
-      idTwo
-    )
+function Num(first, second) {
+  if (first > second) {
+    return first
+  } else if (first < second) {
+    return second
   }
-}
-var number = Num(Math.random(), Math.random());
-console.log(number)
+  return 'Error: they are equal!'
+};
+Num(20, 19.99);

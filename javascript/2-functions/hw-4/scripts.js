@@ -3,9 +3,8 @@
 
 // task 1
 function squareNumber(num) {
-  return
-    var san = num * num
-    console.log('The result of squaring the number ' + num + ' is ' + san)
+  var san = num * num
+  return 'The result of squaring the number ' + num + ' is ' + san)
 };
 var temp = Math.random() * 10 +10;
 squareNumber(temp.toFixed());
@@ -45,7 +44,8 @@ console.log(percentOf(6, 7));
 function areaOfCircle(radius) {
   return 'the area for Circle with radius ' + radius + ' is ' + 2 * radius
 };
-console.log(areaOfCircle(Math.floor(Math.random() * 10)));
+var result = areaOfCircle(546));
+console.log(result);
 
 
 
@@ -55,13 +55,18 @@ console.log(areaOfCircle(Math.floor(Math.random() * 10)));
 
 // task 5
 
+function areaOfCircle(radius) {
+  return 2 * radius
+};
+var result = areaOfCircle(Math.random() * 10));
+var res = result.toFixed(2);
+
 
 
 
 
 
 // task 6
-
 // 1. Take half of the number and store the result.
 function halfNumber(num) {
   return num / 2
@@ -83,7 +88,7 @@ var SQUARE_NUMBER = squareNumber(HALF_NUMBER);
 function areaOfCircle(radius) {
   return  2 * radius;
 };
-var AREA_OF_CIRCLE = areaOfCircle(SQUARE_NUMBER));
+var AREA_OF_CIRCLE = areaOfCircle(SQUARE_NUMBER);
 
 
 

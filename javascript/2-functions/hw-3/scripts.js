@@ -2,16 +2,7 @@
 
 
 function calc(num, txt) {
-  if (num = 34 && txt != 'groups') {
-    return
-      console.log('option one is true')
-  } else if (num != 34 || txt = 'peoples') {
-    return
-      console.log('option two is true')
-  } else if (num = 534 || txt = 'students') {
-    return
-      console.log('option three is true')
-  }
+  return `${num} ${txt}`
 }
 calc(34, 'students')
 
