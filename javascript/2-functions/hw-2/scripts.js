@@ -1,9 +1,19 @@
 // Your JS code is here
 
-var currentYear = 2020;
-var yearOfBirth = 1991;
+function getBiggerNumber(a, b){
+    if(a > b){
+        console.log(`number ${a} is bigger`)
+        return a;
+    }else if(a < b ){
+        console.log(`number ${b} is bigger`)
+        return b;
+    }
+    else if(a === b ){
+        console.log("Error: numbers are equal")
+    }else {
+        console.log("Error: not a number")
+    }
 
-var currentAge = currentYear - yearOfBirth;
-var currentAgePre = currentYear - yearOfBirth-1;
-
-console.log(`I'm ${currentAge} years old or ${currentAgePre}`);
+}
+getBiggerNumber(40, 30);
+getBiggerNumber('a', 30);
