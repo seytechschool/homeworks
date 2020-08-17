@@ -28,7 +28,7 @@ enterFahrenheit(100);
 
 
 
-// console.log()
+
 
 
 

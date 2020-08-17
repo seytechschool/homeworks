@@ -5,3 +5,6 @@ var myLocation = "Chicago";
 var jobTitle = "business woman";
 
 console.log(`You will be a ${jobTitle} in ${myLocation} and married to ${parterName} with ${numberOfChildren} children`);
+
+
+//
