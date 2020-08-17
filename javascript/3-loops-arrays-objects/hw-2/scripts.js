@@ -32,7 +32,7 @@ function colorChoice(arr) {
 colorChoice(colors);
 
 
-
+/******* */
 
 
 
