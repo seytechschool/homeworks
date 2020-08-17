@@ -7,4 +7,4 @@ var currentAge2 =currentYear - yearOfBirth -1;
 
 console.log(`I'm ${currentAge} or ${currentAge2} years old`);
 
-//
+///
