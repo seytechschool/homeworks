@@ -13,14 +13,14 @@
 
 var cORf = window.prompt("If you want to enter Farenheit please enter capital F " +
                                     "and If you want to enter Celsius please enter capital C ")
-
-if(cORf=='C') {
-    var userCel = window.prompt("Please enter CELSIUS to convert to Farenheit: ");
+var userCel;
+if(cORf==='C') {
+     userCel = window.prompt("Please enter CELSIUS to convert to Farenheit: ");
     document.write(userCel * 9 / 5 + 32 + `\u00B0` + " F Farenheit equals to following celsius: " + userCel)
 }
 
-if(cORf=='F') {
-    var userCel = window.prompt("Please enter FARENHEIT to convert to CELSIUS: ");
+if(cORf==='F') {
+     userCel = window.prompt("Please enter FARENHEIT to convert to CELSIUS: ");
     document.write(((userCel - 32) * 5 / 9 ) + `\u00B0` + " C Celsius equals to following Farenheit: " + userCel)
 
 }
