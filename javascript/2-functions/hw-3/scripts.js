@@ -8,4 +8,5 @@ function pluralize (number,word) {
   pluralize(8 , ' cats');
   pluralize(10 , ' rats');
   pluralize(4 , ' birds');
+  pluralize(12 , ' fishes');
   
