@@ -1,7 +1,7 @@
 // Your JS code is here
 var numChildren = Math.random() * (5);
 var age = (Math.random() * (100-23) + 23);
-var name = "M";
+var name = "Miss";
 var place = "Earth";
 
 var nAge = parseInt(age);

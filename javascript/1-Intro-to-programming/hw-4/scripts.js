@@ -4,4 +4,4 @@ console.log("Random Farenheit  number is: " + randomF);
 var cel = (randomF - 32) * 5 / 9;
 
 
-console.log("It will be: " + cel + " Celsius." )
+console.log("It is going to be: " + cel + " Celsius." )
