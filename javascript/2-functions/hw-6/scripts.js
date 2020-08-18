@@ -13,9 +13,6 @@ function fixStart(str){
            }
         
     }
-
-
-// console.log(str);
 }
 
 fixStart('mymmshyk');
