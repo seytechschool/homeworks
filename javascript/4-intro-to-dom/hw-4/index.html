@@ -8,7 +8,24 @@
   </head>
   <body>
     <!-- Your code is here -->
+    <h1>Hello World</h1>
+    <div>Lorem, ipsum dolor.</div>
+    <div>Lorem, ipsum dolor.</div>
+    <div>Lorem, ipsum dolor.</div>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
 
-    <script src="scripts.js"></script>
+    <script>
+      function countTag(tag) {
+        var tags = document.querySelectorAll(tag);
+        var result =
+          "There are " + tags.length + " tags of type " + tag + " on the page.";
+        return result;
+      }
+
+      countTag("p");
+    </script>
   </body>
 </html>
