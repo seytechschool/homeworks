@@ -4,4 +4,4 @@ console.log(`You will be a ${job} in ${location} with ${namePart} with ${numChil
 
 tellFortune('4', 'Angel', 'NY', 'Web developer');
 tellFortune('3', 'Queen', 'CA', 'Pilot');
-tellFortune('2', 'Princess', 'Paris', 'Traveller');
+tellFortune('2', 'Princess', 'Paris',  'Traveller');

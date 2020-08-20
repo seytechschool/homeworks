@@ -7,4 +7,4 @@ function mixUp(word1, word2){
 
 mixUp('dog' ,'dinner');
 
-mixUp('mix' , 'pod');
+mixUp('mix' ,'pod');

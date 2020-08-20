@@ -6,7 +6,7 @@ function compareTwo(num1, num2){
   }else if(num1>num2){
     console.log(`${num1} is bigger than ${num2}`)
   }else{
-    console.log(`${num2} is bigger  than ${num1}`)
+    console.log(`${num2} is bigger than ${num1}`)
   }
 }
 
