@@ -11,7 +11,7 @@ function percentOf(num1, num2){
 }
 
 function areaOfCircle(r){
-	return Math.PI.toFixed(2) * r * r;
+	return Math.PI.toFixed(2) * r * r ;
 }
 
 
