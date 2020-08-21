@@ -7,7 +7,7 @@ function fixStart(word){
       w += word.charAt(i);
     }
   }
-console.log(w);
+console.log(w );
 }
 
 fixStart("bubble");

@@ -8,7 +8,7 @@ function pluralize(num, word){
       }else if(word ==='goose'){
         console.log(num + " geese");
       }else if(word ==='mouse'){
-        console.log(num + " mice");
+        console.log(num + "  mice");
       }
       else{
         console.log(num + " "+ word+"s");
