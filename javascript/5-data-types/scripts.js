@@ -85,5 +85,10 @@ function checkTypes(types) {
 checkTypes([2,3, true,45,['mac', 12],4,3,5,6,7,65,3,2,'hello'])
 
  // 8 task
- // Create a function to get the greatest common divisor
- // (gcd) of two integers `gcd(12, 8) // 4`
+ function gcd(num1, num2) {
+   var max = Math.max(num1, num2);
+   var min = Math.min(num1, num2);
+   var g = max % min;
+   console.log(g)
+ }
+ gcd(12,8);
