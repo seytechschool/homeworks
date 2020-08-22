@@ -69,8 +69,20 @@ function power(two,three) {
 power(2,3);
 
 // 7 task
- // Create a function to check
- // if all values in an array are same types
+function checkTypes(types) {
+  var check = []
+  for (var x = 0; x < types.length; x++) {
+    if (typeof(types[0]) === typeof(types[x])) {
+      check.push(types[x])
+    }
+  }
+  if (check.length === types.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
+checkTypes([2,3, true,45,['mac', 12],4,3,5,6,7,65,3,2,'hello'])
 
  // 8 task
  // Create a function to get the greatest common divisor
