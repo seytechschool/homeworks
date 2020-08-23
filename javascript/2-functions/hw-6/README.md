@@ -16,3 +16,4 @@ Create a function called fixStart. It should take a single argument, a string, a
 fixStart('babble'): 'ba**le'
 fixStart('turtle'): 'tur*le'
 ```
+
