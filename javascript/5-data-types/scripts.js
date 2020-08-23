@@ -3,53 +3,82 @@
 
 // ### Create these functions
 
-// - Create a function which returns number of even numbers from a given array of numbers
-// var arrayList1 = [2, 10, 7, 3, 14, 25, 33];
+    // Create a function which returns number of even numbers from a given array of numbers
+    var arrayList1 = [1,7,8,2,3,9,11,12];
 
-// function arrayOfEvenNumbers(arr) {
-//     var newArray = [];
-//     for(var i=0;i<arr.length;i++) {
-//         if (arr[i] % 2 === 0){
-//             newArray.push(arr[i]);
-//         }
-//     }
-//     return newArray;
-// }
+    function evenNumbersInArray(arr_par){
+        var newArray = [];
+        for (var i=0;i<arr_par.length;i++){
+            if(arr_par[i] % 2 === 0){
+                newArray.push(arr_par[i]);
+            }
+        }
+        return newArray;
+    }
 
-// var output = arrayOfEvenNumbers(arrayList1);
-// console.log(output); // --> [2, 10, 14]
+    console.log(evenNumbersInArray(arrayList1));
+    // Create a function to find how many even numbers between given 2 numbers
+    function evenNumsInBetween(num1,num2){
+        var counter = 0;
+        for(var i=num1;i<num2;i++){
+            if (i % 2 === 0){
+                counter++;
+            }
+        }
+        return counter;
+    }
 
-// - Create a function to find how many even numbers between given 2 numbers
-// function howManyEvenNumbers(num1, num2){
-//     if (num1 % 2 === 0 && num2 % 2 === 0){
-//         return 2;
-//     }
-//     else if(num1 % 2 === 0 || num2 % 2 === 0){
-//         return 1;
-//     }
-//     else {
-//         return 0;
-//     }
-// }
+    console.log('There are ' + evenNumsInBetween(3,15) + ' even numbers in between');
+    // Create a function to find the highest value in an array
+    var arrayList2 = [33,4,56,17,2,90,19,1];
 
-// console.log(howManyEvenNumbers(2, 5)); // --> 1
-// console.log(howManyEvenNumbers(4, 4)); // --> 2
-// console.log(howManyEvenNumbers(7, 7)); // --> 0
+    function highestValueInArray(arr_par){
+        var highestVal = arr_par[0];
+        for(var i=1;i<arr_par.length;i++){
+            if(highestVal < arr_par[i]){
+                highestVal = arr_par[i]
+            }
+        }
+        return highestVal;
+    }
 
-// - Create a function to find the highest value in an array
-var arrayList2 = [2, 10, 45, 3, 14, 25, 33];
-function highestValueInArray(arr){
-    var result = Math.max.apply(null, arr);
-    return result;
-}
+    console.log(highestValueInArray(arrayList2));
+    // Create a function to find the lowest value in an array
+    var arrayList3 = [33,4,56,17,2,90,19,1];
 
-var output = highestValueInArray(arrayList2);
-console.log(output); // --> 33
+    function lowestValueInArray(arr_par){
+        var lowestVal = arr_par[0];
+        for(var i=1;i<arr_par.length;i++){
+            if(lowestVal > arr_par[i]){
+                lowestVal = arr_par[i]
+            }
+        }
+        return lowestVal;
+    }
 
-// - Create a function to find the lowest value in an array
-// - Create a function to calculate sum all numbers from a given array
-// - Create a function to calculate power of a number `power(2, 3)`
-// - Create a function to check if all values in an array are same types
-// - Create a function to get the greatest common divisor (gcd) of two integers `gcd(12, 8) // 4`
+    console.log(lowestValueInArray(arrayList3));
 
+    // Create a function to calculate sum all numbers from a given array
+
+    var arrayList4 = [33,4,56,17,2,90,19,1];
+
+    function sumOfNumbersInArray(arr_par){
+        var total = 0;
+        for (var i=0; i<arr_par.length;i++){
+            total = total + arr_par[i];
+        }
+        return total;
+    }
+
+    console.log(sumOfNumbersInArray(arrayList4));
+    // Create a function to calculate power of a number power(2, 3)
+    function getPowerOfNum(num1, num2){
+        return num1**num2;
+    }
+
+    console.log(getPowerOfNum(2,3));
+
+    // Create a function to check if all values in an array are same types
+    // Create a function to get the greatest common divisor (gcd) of two integers gcd(12, 8) // 4
+    
 // #### If you stuck please reach out to mentors/instructors
