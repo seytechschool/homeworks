@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>JavaScript Homeworks - Intro To Dom</title>
-  </head>
-  <body>
-    <!-- Your code is here -->
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
 
-    <script src="scripts.js"></script>
-  </body>
+  <style>
+    .LiClass{
+     color: yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname:
+      <span id="nickname"></span>
+    </li>
+    <li>Favorites:
+      <span id="favorites"></span>
+    </li>
+    <li>Hometown:
+      <span id="hometown"></span>
+    </li>
+   </ul>
+
+   <script>
+     document.body.style.fontFamily= "Arial, sens-serif";
+     document.body.style.backgroundColor = 'red';
+     document.getElementById('nickname').innerText = "Rocky";
+     document.getElementById('favorites').innerText = "reading and coding";
+     document.getElementById('hometown').innerText = "Leilek";
+
+     var myLists = document.getElementsByTagName('li');
+     for(var i =0; i < myLists.length; i++) {
+       // add class to each li
+       // then style them
+       myLists[i].classList.add('LiClass');
+       console.log(myLists[i].childNodes[1].style.color = 'blue');
+
+     }
+     console.log("hey:", myLists)
+     
+   </script>
+
+ </body>
 </html>
