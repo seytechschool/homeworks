@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>About Me</title>
+</head>
+
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname:
+      <span id="nickname"></span>
+    </li>
+    <li>Favorites:
+      <span id="favorites"></span>
+    </li>
+    <li>Hometown:
+      <span id="hometown"></span>
+    </li>
+  </ul>
+
+  <script>
+    document.body.style.fontFamily = "Arial, sans-serif";
+
+    document.querySelector('#nickname').innerHTML = "Joker";
+    document.querySelector('#favorites').innerHTML = "Cappucino";
+    document.querySelector('#hometown').innerHTML = "Gothem";
+
+    let list = document.querySelectorAll('li');
+    for (let i = 0; i < list.length; i++) {
+      list[i].className = 'listitem';
+      list[i].style.color = "red";
+    }
+
+    let image = document.createElement('img');
+    image.src =
+      "http://s3.amazonaws.com/quietus_production/images/articles/21578/sherlock-season-4-featured-image_1484578180_crop_550x373.jpg";
+    document.body.append(image);
+  </script>
+
+</body>
+
+</html>
