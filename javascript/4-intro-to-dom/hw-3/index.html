@@ -5,10 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>JavaScript Homeworks - Intro To Dom</title>
+    <style>
+      #ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+      }
+      .li {
+        position: relative;
+        width: 12em;
+        height: 305px;
+        margin: 2px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .li img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        box-shadow: 1px 1px 10px;
+      }
+      .author {
+        box-shadow: 4px 11px 20px  #8d898932;
+        cursor: pointer;
+      }
+       
+      
+    </style>
   </head>
   <body>
     <!-- Your code is here -->
+    <h1>My Book List</h1>
 
-    <script src="scripts.js"></script>
+    <ul id="ul">
+
+    </ul>
+
+    <script >
+
+
+      let books = [
+        { 
+          title: "Sherlock Holmes",
+          author: "Conan Doyle",
+          alreadyRead: true,
+          url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQj7-W-O2ag56l80vrSWc6yaRTM47TLpeDS9kLNPpGN2XDM1VupPMgiNRreXKhNJTdj_W_5Ej4&usqp=CAc'
+        },
+        {
+          title: "The Messenger of God",
+          author: "Fethullah Gulen",
+          alreadyRead: true,
+          url: 'https://images-na.ssl-images-amazon.com/images/I/41PHQZJHM7L._SX313_BO1,204,203,200_.jpg'
+        },
+        {
+          title: "The Hobbit",
+          author: "R.R.J. Tolkien",
+          alreadyRead: false,
+          url: 'https://images-na.ssl-images-amazon.com/images/I/91b0C2YNSrL.jpg'
+        },
+        {
+          title: "Data Structures and Algorithms in C++",
+          author: "Michael T. Goodrich",
+          alreadyRead: false,
+          url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXu8wc9VVPDhcikdjppsumMSHBX2CCdEFjsdukXn7oVn7uHGz7B0jRlUCkTzwnkIgteeJ3Mgpu&usqp=CAc'
+        },
+        {
+          title: "Harry Potter",
+          author: "J. Rolling",
+          alreadyRead: true,
+          url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIkuhLcbHKlq9uLAH6LNzUHu2gnIZujhLDLrkcejENtgdZs929h5v_AJMXuAI&usqp=CAc'
+        } 
+      ]
+      let ul = document.querySelector('#ul')
+
+      for (let i = 0; i < books.length; i++) {
+        let li = document.createElement('li')
+        li.className = 'li'
+        ul.appendChild(li)
+        
+        let img = document.createElement('img')
+        img.src = books[i].url
+        img.className = 'url'
+        li.appendChild(img)
+
+        let title = document.createElement('div')
+        title.textContent = books[i].title
+        title.className = 'title'
+        li.appendChild(title)
+
+
+        let author = document.createElement('div')
+        author.textContent = books[i].author
+        author.className = 'author'
+        li.appendChild(author)
+
+        if (books[i].alreadyRead) {
+          let read = document.createElement('div')
+          read.className = 'read'
+          read.textContent = 'done'
+          li.appendChild(read)
+          read.style.position = 'absolute'
+          read.style.top = '0'
+          read.style.left = '10px'
+          read.style.backgroundColor = 'tomato'
+          read.style.borderRadius = '8px'
+          read.style.padding = '0 5px'
+        }
+        li.style.cursor = 'pointer'
+      }
+
+    </script>
   </body>
 </html>
