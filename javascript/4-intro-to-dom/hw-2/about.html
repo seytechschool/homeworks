@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname:
+      <span id="nickname"></span>
+    </li>
+    <li>Favorites:
+      <span id="favorites"></span>
+    </li>
+    <li>Hometown:
+      <span id="hometown"></span>
+    </li>
+   </ul>
+
+
+   <script>
+     document.body.style.fontFamily = 'Arial, sans-serif'
+      let nick = document.querySelector('#nickname')
+      let fav = document.querySelector('#favorites')
+      let home = document.querySelector('#hometown')
+
+      nick.textContent = 'Max'
+      fav.textContent = 'food'
+      home.textContent = 'Osh'
+
+      let lists = document.querySelectorAll('li')
+      for (let i = 0; i < lists.length; i++) {
+        lists[i].className = 'listitem'
+      }
+      for (let i=0; i<document.querySelectorAll('.listitem').length; i++) {
+        document.querySelectorAll('.listitem')[i].style.color = 'red'
+      }
+
+      document.body.appendChild(document.createElement('img'))
+      document.querySelector('img').src = 'https://previews.123rf.com/images/masar1920/masar19201810/masar1920181000090/111149258-osh-kyrgyzstan-life-on-streets-of-osh-the-second-largest-city-in-kyrgyzstan-located-in-the-fergana-v.jpg'
+
+
+
+   </script>
+ </body>
+</html>
