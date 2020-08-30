@@ -79,6 +79,36 @@
     console.log(getPowerOfNum(2,3));
 
     // Create a function to check if all values in an array are same types
+
+    var arrayList5 = [33,4,56,17,2,90,19,1];
+    // var arrayList5 = [33,4,null,17,{},90,19,'hi',undefined];
+    // var arrayList5 = [33,4,17,90,19,undefined];
+
+
+    function isArrayValuesSameType(arr_par){
+        var firstArrItem = arr_par[0];
+        for(var i=1;i<arr_par.length;i++){
+            if(typeof firstArrItem !== typeof arr_par[i]){
+                return false;
+            }
+        }
+        return true
+    }
+
+    console.log(isArrayValuesSameType(arrayList5))
     // Create a function to get the greatest common divisor (gcd) of two integers gcd(12, 8) // 4
     
+    function greatCommonDivisor(num1,num2){
+        var min = num1;
+        if(num1 > num2){
+            min = num2;
+        }
+        for(var i = min; i>0; i--){
+            if(num1 % i == 0 && num2 % i == 0){
+                return i
+            }
+        }
+    }
+
+    console.log(greatCommonDivisor(60,24))
 // #### If you stuck please reach out to mentors/instructors
