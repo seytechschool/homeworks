@@ -1,1 +1,1 @@
-// Your JS code is here
+//hw-2-functions-1

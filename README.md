@@ -16,7 +16,7 @@ This is a repository for Homeworks.
 
 4. Create a branch based on class
 
-   1. create a branch [class]-[username]     sample: intro-to-js-ulanbak
+   1. create a branch [class]-[username] sample: intro-to-js-ulanbak
 
 5. **After you finish your homework push it to your github master branch**
 
@@ -25,19 +25,17 @@ This is a repository for Homeworks.
    - `git push --set-upstream origin intro-to-js-[username]`
 
 6. **Then from your github master open PULL REQUEST seytechchool/homeworks upstream to your username branch**
+
    - Ex: `seytechschool/homeworks, base:your-username <- your-username/homeworks, base:master`
 
-7. Start doing same thing for other classes
+7. **Start doing same thing for other classes**
 
+   names:
 
-
-names:
-* intro-to-js
-* functions
-* loops
-* dom
-* data-types
-* methods
-
-
-* Each Class homeworks need to have a new pull request.
+   - intro-to-js
+   - functions
+   - loops
+   - dom
+   - data-types
+   - methods
+   - Each Class homeworks need to have a new pull request.
