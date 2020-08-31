@@ -1,0 +1,89 @@
+main {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background-image {
+  width: 100%;
+  position: absolute;
+}
+
+.shelf {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.completed-books-shelf {
+  width: 100%;
+}
+
+.future-books-shelf {
+  width: 100%;
+}
+
+.books {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.book-cover {
+  width: 100%;
+}
+
+.scroll-button {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 100;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-button div:hover {
+  border-color: yellow;
+}
+
+.left {
+  left: -20px;
+  top: 50%;
+}
+
+.left-div {
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.right {
+  right: -20px;
+  top: 50%;
+}
+
+.right-div {
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.shelf-title {
+  position: absolute;
+  bottom: -50px;
+  font-size: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
