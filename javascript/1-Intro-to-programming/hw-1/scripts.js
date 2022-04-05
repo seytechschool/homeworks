@@ -1,7 +1,8 @@
-var x = 'Front-End Developer'
-var y = 'Qatar'
-var z = 'Rabih'
-var n = 2;
+let numKids = 2;
+let partner = 'Rabih';
+let geolocation = 'USA';
+let jobTitle = 'Front End Developer';
 
-var fortuneTeller = 'You will be a ' + x +' in ' + y + ', and married to ' + z + ' with ' +n + ' kids.';
-console.log(fortuneTeller);
+ let future = 'You will be a ' + jobTitle + ' in ' + geolocation + ', and married to ' + partner + ' with ' + numKids + ' kids.';
+
+console.log(future)
